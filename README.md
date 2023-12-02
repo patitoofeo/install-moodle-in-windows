@@ -46,7 +46,7 @@ Carpetas
 
 Si aun asi no lo entiendes, dejare un video:
 
-<video src="./images/video.mp4" controls title="Title" allowfullscreen></video>
+[![Watch the video](https://i.imgur.com/SAnKM8f.png)](https://youtu.be/FUYTEY8ighw)
 
 Si has seguido bien los pasos no debería darte error, debería dejarte ejecutar el servicio de MySql en Xampp.
 
