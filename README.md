@@ -107,6 +107,16 @@ Una vez creada podremos seguir con la instalación de Moodle
 ![Pagina web moodle base de datos](./images/image-4.png)
 Ahora nos pedirá los datos de la base de datos, si no hemos cambiado nada en la configuración de Xampp deberemos de déjalo como se muestra en la imagen superior.
 
+### Posibles errores
+
+Si nos da un error de "La conexión ha sido restablecida" al intentar seguir con la instalacion deberemos de editar el archivo en __apache/conf/httpd.conf__ y agregar las siguientes lineas. Da igual donde lo insertamos.
+
+```
+<IfModule mpm_winnt_module>
+  ThreadStackSize 8888888
+</IfModule>
+```
+
 ### Extension sodium
 
 ![Pagina web moodle comprobación](./images/image-5.png)
