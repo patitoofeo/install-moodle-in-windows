@@ -102,6 +102,18 @@ Se nos abrirá una pagina web localmente en la cual podemos administrar la base 
 Tal como se muestra en la siguiente imagen:
 ![Foto phpMyAdmin](./images/image-3.png)
 
+### Posibles errores
+
+Si nos da un error de "La conexión ha sido restablecida" al intentar seguir con la instalacion deberemos de editar el archivo en __apache/conf/httpd.conf__ y agregar las siguientes lineas. Da igual donde lo insertamos.
+
+```
+<IfModule mpm_winnt_module>
+
+  ThreadStackSize 8888888
+
+</IfModule>
+```
+
 Una vez creada podremos seguir con la instalación de Moodle 
 
 ![Pagina web moodle base de datos](./images/image-4.png)
